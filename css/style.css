@@ -1,0 +1,596 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+
+.header{
+	background: linear-gradient(to left, #ff009b, 20%, #426442, 61%, #00ec93, #b0f);
+	position: fixed;
+  	width: 100%;
+  	z-index: 111;
+}
+.navbar{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.navbar a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 28px;
+	font-family: arial;
+}
+.navbar ul{
+	
+	display: flex;
+}
+.navbar ul li{
+	list-style: none;
+
+}
+.navbar ul li a{
+	color: #fff;
+	padding: 20px 20px;
+	display: block;
+	text-decoration: none;
+	font-family: arial;
+	font-size: 16px;
+	transition: 1s all ease;
+	font-weight: bold;
+}
+.active{
+	background: linear-gradient(to left, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.4));
+  	border-radius: 100px;
+}
+
+.navbar ul li a:hover{
+	background: #fff;
+	color: #000;
+	border-radius: 100px;
+}
+/*icon style*/
+.mydrop{
+	text-align: right;
+	position: relative;
+	display: none;
+	z-index: 999;
+}
+.mydrop i{
+	border: 2px solid #fff;
+	font-size: 18px;
+	padding: 10px 15px;
+	border-radius: 5px;
+	color: #fff;
+	position: fixed;
+	top: 27px;
+	right: 30px;
+
+}
+/*CSS slider design start*/
+#slider{
+	background: url(../image/slider2.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 50px 0;
+	margin-top: 5.8%;
+  	display: inline-block;
+
+}
+.container{
+	padding: 50px 0;
+	width: 80%;
+	//background: red;
+	margin: 0 auto;
+}
+.main-slider{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 1rem;
+}
+.slider2 img{
+	width: 100%;
+	transition: 1s all ease;
+	animation: slideimg 2s infinite;
+}
+
+@keyframes slideimg{
+	0%{
+		transform: scale(1.0);
+	}
+	50%{
+		transform: scale(1.1);
+	}
+}
+.slider-text h1{
+	color: #fff;
+	font-size: 2rem;
+	width: 0ch;
+	white-space: nowrap;
+	overflow: hidden;
+	animation: text 6s steps(17) infinite;
+	border-right: 3px solid #fff;
+}
+@keyframes text{
+	0%{
+		width: 0ch;
+	}
+	50%{
+		width: 18ch;
+	}
+}
+.slider-text h2{
+	color: #fff;
+	font-size: 1.5rem;
+	padding: 0.8rem 0;
+	width: 0ch;
+	white-space: nowrap;
+	overflow: hidden;
+	animation: text2 6s infinite;
+}
+@keyframes text2{
+	0%{
+		width: 0ch;
+	}
+	50%{
+		width: 34ch;
+	}
+}
+.slider-text p{
+	color: #fff;
+  font-size: 1.1rem;
+  text-align: justify;
+  line-height: 30px;
+}
+/*Slider button design*/
+.slider-button{
+	padding: 20px 0px;
+}
+.slider-button button{
+	padding: 15px 40px;
+	font-size: 18px;
+	font-family: arial;
+	border: none;
+	border-radius: 100px;
+	background: linear-gradient(to left, rgb(253, 77, 184), rgba(114, 74, 255, 0.92));
+	color: #fff;
+}
+.slider-button button:hover{
+	padding: 15px 40px;
+	font-size: 18px;
+	font-family: arial;
+	border: none;
+	border-radius: 100px;
+	background: linear-gradient(to right, rgb(253, 77, 184), rgba(114, 74, 255, 0.92));
+	cursor: pointer;
+}
+/*about CSS design*/
+.title h1{
+	background: linear-gradient(to left, rgba(255, 20, 163, 0.5), rgba(104, 0, 255, 0.6));
+	padding: 15px 0;
+	text-align: center;
+	color: #fff;
+}
+#about{
+	
+}
+.main-about{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 1rem;
+	padding: 30px 0;
+}
+.about-img{
+	width: 100%;
+}
+.about-img img{
+	width: 100%;
+
+}
+.about-content{
+	padding: 0 20px;
+}
+.about-content h4{
+	color: #222;
+	padding: 5px 0;
+}
+.about-content p{
+	color: #444;
+	font-size: 13px;
+	text-align: justify;
+	line-height: 20px;
+}
+/*Our course CSS design start*/
+.main-course{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 1.5rem;
+}
+.course-box{
+	background: linear-gradient(to left, rgb(249, 253, 255), rgba(163, 19, 168, 0.08));
+	padding: 0px 0;
+	margin: 10px 0;
+	box-shadow: 0px 4px 3px 0px #c6c4c4;
+  	border-radius: 0px 0px 15px 15px;
+  	transform: scale(1.0);
+  	transition: 0.3s all ease;
+}
+.course-box:hover{
+	background: linear-gradient(to left, rgb(249, 253, 255), rgba(163, 19, 168, 0.08));
+	padding: 0px 0;
+	margin: 10px 0;
+	box-shadow: 0px 4px 3px 0px #c6c4c4;
+  	border-radius: 0px 0px 15px 15px;
+  	transform: scale(1.04);
+}
+.course-box h4{
+	background: linear-gradient(to left, rgba(124, 0, 247, 0.71), rgba(19, 168, 63, 0.94));
+	text-align: center;
+	color: #fff;
+	padding: 12px 0;
+	font-size: 15px;
+}
+.course-img{
+	text-align: center;
+}
+.course-img img{
+	width: 40%;
+	padding: 15px 0;
+}
+.course-inner-main{
+	text-align: center;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: .5rem;
+	padding: 15px 7px;
+}
+.inner-box{
+	background: #FBE7F4;
+	border-radius: 10px;
+	padding: 8px 3px;
+	box-shadow: 0px 2px 1px 0px #45e6b8;
+}
+.inner-box p{
+	font-size: 12px;
+	font-weight: bold;
+}
+/*Course button CSS Start*/
+.course-button-main{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 1rem;
+	padding: 30px 30px;
+	text-align: center;
+}
+.course-button1 button{
+	padding: 15px 30px;
+	border-radius: 100px;
+	border: none;
+	color: #5e5ef4;
+	font-weight: 600;
+	background: linear-gradient(to left, rgba(255, 0, 108, 0.32), rgba(125, 0, 249, 0.24));
+	transition: 0.5s all ease;
+}
+.course-button1 button:hover{
+	padding: 15px 30px;
+	border-radius: 100px;
+	border: none;
+	color: #fff;
+	font-weight: 600;
+	background: linear-gradient(to left, rgba(255, 0, 108, 0.55), rgba(125, 0, 249, 0.48));
+	cursor: pointer;
+}
+.course-button2 button{
+	padding: 15px 30px;
+	border-radius: 100px;
+	border: none;
+	color: #5e5ef4;
+	font-weight: 600;
+	background: linear-gradient(to left, rgba(48, 226, 255, 0.44), rgba(249, 198, 0, 0.31));
+	transition: 0.5s all ease;
+}
+.course-button2 button:hover{
+	padding: 15px 30px;
+	border-radius: 100px;
+	border: none;
+	color: #fff;
+	font-weight: 600;
+	background: linear-gradient(to left, rgba(255, 0, 108, 0.55), rgba(125, 0, 249, 0.48));
+	transition: 0.5s all ease;
+	cursor: pointer;
+}
+.wrapper{
+	//width: 95%;
+	margin: auto;
+}
+/*------Course Details CSS Design------*/
+#course-details{
+	background: #eee;
+}
+.details-title{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 1rem;
+	background: linear-gradient(to left, rgba(255, 0, 167, 0.14), rgba(68, 0, 255, 0.31));
+  	padding: 5px 0;
+  	align-items: center;
+}
+.title-content{
+	text-align: right;
+}
+.title-content h1{
+	color: navy;
+}
+.title-button{
+	padding: 5px 50px;
+}
+.title-button button{
+	padding: 12px 30px;
+  	border-radius: 100px;
+  	border: none;
+  	font-size: 14px;
+  	background: #E12828;
+  	color: #ffd863;
+  	transition: 0.5s all ease;
+}
+.title-button button:hover{
+	padding: 12px 30px;
+  	border-radius: 100px;
+  	border: none;
+  	font-size: 14px;
+  	background: #9333EA;
+  	color: #fff;
+  	cursor: pointer;
+}
+.course-details-main{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 1rem;
+}
+.details-img{
+	width: 100%;
+	padding: 10px 0;
+}
+.details-img img{
+	width: 100%;
+	min-height: 465px;
+}
+.details-content{
+	padding: 8px 0;
+}
+/*Our team CSS Design Work*/
+.our-team{
+	padding: 10px 0;
+}
+.sub-item{
+	//background: red;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+.sub-item:hover .social-icon{
+	top: 0%;
+	left: 0%;
+}
+.social-icon{
+	position: absolute;
+	top: 0%;
+	left: -20%;
+	transition: 0.5s all ease;
+}
+.sub-item img{
+	opacity: 0.8;
+	transition: 0.5s all ease;
+}
+.sub-item img:hover{
+	opacity: 1;
+	cursor: pointer;
+}
+.designation{
+	background: linear-gradient(to left, rgba(255, 21, 240, 0.16), rgba(157, 15, 255, 0.57));
+	padding: 10px 0;
+	text-align: center;
+}
+.designation h3{
+	color: #000;
+	font-family: arial;
+	font-size: 18px;
+}
+.designation p{
+	color: #000;
+	font-family: arial;
+	font-size: 17px;
+	padding: 5px 0;
+}
+.social-icon ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.social-icon ul li{
+	//padding: 5px;
+}
+.social-icon ul li a{
+	color: #fff;
+	text-decoration: none;
+}
+.social-icon ul li a i{
+	width: 50px;
+	min-height: 43.8px;
+	background: teal;
+	text-align: center;
+	line-height: 40px;
+	transition: 0.5s all ease;
+}
+.social-icon ul li a i:hover{
+	width: 70px;
+	min-height: 43.8px;
+	background: teal;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 0px 100px 100px 0px;
+}
+.social-icon ul li a .fa-facebook-f{
+	background: #1877F2;
+}
+.social-icon ul li a .fa-twitter{
+	background: #1AB7EA;
+}
+.social-icon ul li a .fa-linkedin-in{
+	background: #0A66C2;
+}
+.social-icon ul li a .fa-instagram{
+	background: #E4405F;
+}
+.social-icon ul li a .fa-pinterest-p{
+	background: #BD081C;
+}
+.social-icon ul li a .fa-youtube{
+	background: #CD201F;
+}
+/*--------Contact design start--------*/
+.main-contact{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 1rem;
+	padding: 50px 0;
+}
+.contact-icon{
+	width: 40px;
+	height: 40px;
+	//background: #e3a4f3;
+	text-align: center;
+	border-radius: 100px;
+	padding: 20px;
+	border: 2px solid #CB7CFF;
+}
+.contact-icon i{
+	padding: 6px 0;
+  	font-size: 28px;
+  	color: #cb7cfe;;
+	
+
+}
+.contact-content{
+	display: flex;
+	align-items: center;
+}
+.contact-info{
+	padding: 0 20px;
+}
+.contact-info h4{
+	font-size: 20px;
+	font-family: arial;
+}
+.contact-info p{
+	font-size: 16px;
+	font-family: arial;
+}
+.hr:before{
+	content: "";
+	clear: both;
+	display: block;
+	background: #ccc;
+	width: 100%;
+	height: 1px;
+	margin-top: 30px;
+
+}
+.hr:after{
+	content: "";
+	clear: both;
+	display: block;
+	background: #ccc;
+	width: 100%;
+	height: 1px;
+}
+/*form area*/
+.contact-form-main{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 1rem;
+	margin-top: 30px;
+}
+.form-group{
+	padding: 10px 0;
+}
+.form-control input, textarea{
+	padding: 12px;
+  width: 90%;
+  border: none;
+  background: #eee;
+  border-radius: 5px;
+  font-size: 15px;
+}
+.form-button{
+	padding: 15px 0;
+}
+.form-button input{
+	width: 96%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  background: linear-gradient(to left, rgba(240, 8, 148, 0.31), rgba(165, 28, 242, 0.77));
+  color: #fff;
+  transition: 0.5s all ease;
+}
+.form-button input:hover{
+	width: 96%;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  background: none;
+  color: #fff;
+  cursor: pointer;
+  background: linear-gradient(to right, rgba(240, 8, 148, 0.31), rgba(165, 28, 242, 0.77));
+}
+.contact-form-area1 h2{
+	font-family: arial;
+	padding: 5px 0;
+}
+/*Footer */
+.footer-img{
+	width: 100%;
+}
+.footer-img img{
+	width: 40%;
+}
+.footer{
+	background: linear-gradient(to left, rgba(255, 0, 203, 0.37), rgba(136, 64, 226, 0.12));
+}
+.main-footer{
+	display: grid;
+	grid-gap: 1rem;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+}
+.footer-link P{
+	font-size: 16px;
+	font-family: arial;
+}
+.footer-link a{
+	text-decoration: none;
+}
+/*To top start*/
+.top-iocn{
+	background: rgba(0, 0, 0, 0.5);
+	display: inline-block;
+	padding: 10px;
+	width: 40px;
+	height: 40px;
+	border-radius: 100px;
+	position: fixed;
+	right: 30px;
+	bottom: 30px;
+	display: none;
+	z-index: 999;
+}
+.top-iocn a i{
+	color: #fff;
+	font-size: 25px;
+	text-align: center;
+	padding: 10px;
+}

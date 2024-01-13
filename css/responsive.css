@@ -1,0 +1,108 @@
+/*Responsive menu Design*/
+@media all and (max-width: 767px){
+	.navbar{
+		flex-direction: column;
+		align-items: self-start;
+		width: 100%;
+		display: block;
+	}
+
+	.navbar ul{
+		flex-direction: column;
+
+	}
+	.navbar a{
+		padding: 10px 20px;
+		display: block;
+	}
+	.mydrop{
+		display: block;
+	}
+	.navbar ul{
+		display: none;
+	}
+
+}
+/*Slider design responsive work*/
+@media all and (max-width: 767px){
+	.main-slider{
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-gap: 1rem;
+	}
+
+}
+/*-----------About Section Responsive start--------------*/
+@media all and (max-width: 767px){
+	.main-about{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 1rem;
+	padding: 30px 0;
+	}
+
+}
+@media all and (max-width: 481px){
+	.title h1{
+	padding: 15px 0;
+	text-align: center;
+	color: #fff;
+	font-size: 14px;
+}
+
+
+}
+/*Course responsive design CSS*/
+@media all and (max-width: 767px){
+	.main-course{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 1.5rem;
+	}
+}
+@media all and (max-width: 575px){
+
+	.main-course{
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-gap: 1.5rem;
+	}
+}
+/*-------course details work-------*/
+@media all and (max-width: 575px){
+	.course-details-main{
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-gap: 1rem;
+	}
+
+}
+/*contact section*/
+@media all and (max-width: 767px){
+	.main-contact{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 1rem;
+	padding: 50px 0;
+}
+}
+/*Contact form*/
+@media all and (max-width: 767px){
+	.contact-form-main{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-gap: 1rem;
+	margin-top: 30px;
+}
+
+}
+/* footer start */
+@media all and (max-width: 767px){
+	.main-footer{
+	display: grid;
+	grid-gap: 1rem;
+	grid-template-columns: 1fr;
+	align-items: center;
+}
+
+}
